@@ -150,7 +150,7 @@ background:#16a085;
 }
 
 .cv h1 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 50px;
     font-size: 40px;
 }
@@ -350,16 +350,15 @@ background:#16a085;
 
 /* ================= DATA REAL-TIME ================= */
 
-/* Card Container - DI TENGGAH */
 .card-container {
     display: flex;
-    justify-content: **center**;        /* ✅ Tengah horizontal */
-    align-items: **center**;            /* ✅ Tengah vertikal */
-    gap: 25px;                          /* Jarak antar card lebih lebar */
-    flex-wrap: wrap;
-    padding: 20px 0;                    /* Padding atas bawah */
-    max-width: 1200px;                  /* Batasi lebar maksimal */
-    margin: 0 auto;                     /* Pastikan container di tengah */
+    justify-content: flex-start; /* Mengatur kotak mulai dari kiri */
+    align-items: stretch;        /* Agar tinggi kotak sama rata */
+    gap: 30px;                   /* Jarak antar kotak */
+    flex-wrap: wrap;             /* Agar turun ke bawah jika penuh */
+    padding: 20px 0;
+    max-width: 1100px;           /* Sesuaikan dengan lebar .cv kamu */
+    margin: 0 auto;              /* Container utama tetap di tengah halaman */
 }
 
 /* CARD BARU - PUTIH DENGAN EFEK */
@@ -375,7 +374,7 @@ background:#16a085;
     border-radius: 24px;                /* Border radius lebih smooth */
     width: 280px;                       /* Lebar lebih ideal */
     min-height: 320px;                  /* Tinggi minimum sama */
-    text-align: center;
+    text-align: left;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     position: relative;
     overflow: hidden;
@@ -386,7 +385,7 @@ background:#16a085;
     /* Flex untuk konten di tengah */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-star;
 }
 
 /* TULISAN HITAM PEKAT */
@@ -511,7 +510,7 @@ background:#16a085;
 
 /* Tambahan untuk koleksi section */
 #koleksi .card-container {
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
