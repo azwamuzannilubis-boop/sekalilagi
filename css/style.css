@@ -209,6 +209,44 @@ background:#16a085;
     border-radius: 15px;
 }
 
+/* ================= FOOTER ================= */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+footer h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero-modern h1 {
+    font-size: 30px;
+}
+
+    .video-container iframe {
+        height: 250px;
+    }
+}
+
 /* EFEK HOVER CV CARD */
 .card:hover {
     transform: translateY(-20px) scale(1.02);
@@ -352,52 +390,25 @@ background:#16a085;
 
 .card-container {
     display: flex;
-    justify-content: flex-start; /* Mengatur kotak mulai dari kiri */
+    justify-content: center; /* Mengatur kotak mulai dari kiri */
     align-items: stretch;        /* Agar tinggi kotak sama rata */
-    gap: 30px;                   /* Jarak antar kotak */
+    gap: 20px;                   /* Jarak antar kotak */
     flex-wrap: wrap;             /* Agar turun ke bawah jika penuh */
-    padding: 20px 0;
-    max-width: 1100px;           /* Sesuaikan dengan lebar .cv kamu */
-    margin: 0 auto;              /* Container utama tetap di tengah halaman */
 }
 
 /* CARD BARU - PUTIH DENGAN EFEK */
 .card {
     /* Background PUTIH SOLID */
-    background: #ffffff !important;
-    backdrop-filter: blur(0px) !important;
-    
-    /* Border halus */
-    border: 2px solid #e0e0e0;
-    
-    padding: 35px 25px;                 /* Padding lebih nyaman */
-    border-radius: 24px;                /* Border radius lebih smooth */
-    width: 280px;                       /* Lebar lebih ideal */
-    min-height: 320px;                  /* Tinggi minimum sama */
-    text-align: left;
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background: #ffffff;
+    backdrop-filter: blur(0px)
+    padding: 30px;
+    border-radius: 20px;
+    width: 260px;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255,255,255,0.2);
     position: relative;
     overflow: hidden;
-    
-    /* Shadow awal */
-    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
-    
-    /* Flex untuk konten di tengah */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-star;
-}
-
-/* TULISAN HITAM PEKAT */
-.card h2,
-.card h3,
-.card h4,
-.card p,
-.card span,
-.card li {
-    color: #1a1a1a !important;
-    font-weight: 500;
-    text-shadow: none !important;
 }
 
 /* EFEK GLOW PUTIH */
