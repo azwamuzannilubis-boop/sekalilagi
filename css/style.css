@@ -278,10 +278,40 @@ section h2 {
 
 /* ================= FOOTER ================= */
 footer {
-    background: #2e7d32;
-    color: white;
-    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 60px 20px;
     text-align: center;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+footer h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .video-container iframe {
+        height: 250px;
+    }
 }
 
 /* ================= RESPONSIVE ================= */
