@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Tani Sejahtera Library</title>
+    <title>Pustaka Komunitas Warga</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- CSS -->
@@ -12,25 +12,27 @@
 
 <!-- NAVBAR -->
 <header>
-   <div class="logo">Tani Sejahtera Library</div>
+   <div class="logo">📚PusKomWarga</div>
    <nav>
     <a href="#">Home</a>
 
     <div class="dropdown">
-        <a href="#About Us" class="dropbtn">About Us</a>
+        <a href="about.html" class="dropbtn">About Us</a>
         <div class="dropdown-content">
-            <a href="about.html">Tentang Perpustakaan</a>
-            <a href="cv.html">Tentang Pengelola</a>
+            <a href="about.html">Tentang Kami</a>
+            <a href="about.html#visi">Visi</a>
+            <a href="about.html#misi">Misi</a>
         </div>
     </div>
+
+    <a href="cv.html">Profil</a>
 
     <div class="dropdown">
         <a href="#layanan" class="dropbtn">Layanan</a>
         <div class="dropdown-content">
-            <a href="#layanan">Koleksi Digital</a>
-            <a href="#layanan">Promosi Hasil Panen</a>
-            <a href="#layanan">Forum Diskusi</a>
-            <a href="#layanan">Kemitraan & Distribusi</a>
+            <a href="#layanan">Peminjaman Buku</a>
+            <a href="#layanan">Akses Digital</a>
+            <a href="#layanan">Literasi Informasi</a>
         </div>
     </div>
 
@@ -44,10 +46,10 @@
     </div>
 
     <div class="dropdown">
-        <a href="#event" class="dropbtn">Program</a>
+        <a href="#event" class="dropbtn">Event</a>
         <div class="dropdown-content">
-            <a href="event.html">Agenda</a>
-            <a href="aktivitas.html">Aktifitas</a>
+            <a href="#event">Event Terbaru</a>
+            <a href="event.html">Selengkapnya</a>
         </div>
     </div>
 
@@ -68,27 +70,33 @@
   <div class="hero-content">
     
     <h1 class="judul-utama animasi-text">
-      Selamat Datangdi Tani Sejahtera Library
+      Selamat Datang di Pustaka Komunitas Warga
     </h1>
 
     <p class="subjudul">
-      Sumber literasi dan informasi digital yang menjadi penggerak kemajuan dan kesejahteraan bagi petani Karo
+      Pusat literasi digital yang menyediakan informasi, koleksi, dan layanan 
+      untuk masyarakat dalam satu platform yang mudah diakses.
     </p>
 
     <div class="search-box-modern">
       <input type="text" placeholder="Cari buku favoritmu...">
       <button>🔍</button>
     </div>
+
+    <br>
+    <a href="cv.html" class="btn">Lihat Profil Saya</a>
+
+  </div>
 </section>
     
-<!-- DATA REAL-TIME -->
-<section id="DATA REAL-TIME">
-    <h2>DATA REAL-TIME</h2>
+<!-- LAYANAN -->
+<section id="layanan">
+    <h2>Layanan</h2>
     
     <div class="card-container">
-        <div class="card">Widget Cuaca Pertanian</div>
-        <div class="card">Highlight Produk Unggulan</div>
-        <div class="card">Testimoni Mitra</div>
+        <div class="card">📖 Peminjaman Buku</div>
+        <div class="card">💻 Akses Digital</div>
+        <div class="card">📚 Literasi Informasi</div>
     </div>
 </section>
 
@@ -102,30 +110,52 @@
     </div>
 </section>
 
-<!-- HARGA KOMODITAS -->
-<section id="harga" class="event-section">
-    <h2>Harga Komoditas Pasar</h2>
+<!-- EVENT -->
+<section id="event" class="event-section">
+    <h2>Event Perpustakaan</h2>
     <p class="event-subtitle">
-        Informasi harga terkini hasil pertanian untuk membantu petani dalam menentukan strategi penjualan.
+        Ikuti berbagai kegiatan menarik untuk pengembangan literasi, keterampilan digital, dan komunitas warga.
     </p>
 
-    <div class="table-container">
-        <table class="harga-table">
-            <thead>
-                <tr>
-                    <th>Komoditas</th>
-                    <th>Harga Hari Ini</th>
-                    <th>Satuan</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody id="data-harga">
-                <!-- Data akan diisi oleh JavaScript -->
-            </tbody>
-        </table>
+    <div class="event-container">
+        <div class="event-card">
+            <img src="img/event1.jpg" alt="Workshop Literasi Digital">
+            <div class="event-content">
+                <h3>Workshop Literasi Digital</h3>
+                <p>
+                    Pelatihan strategi penggunaan media digital dan internet sehat
+                    untuk masyarakat dan pelajar.
+                </p>
+                <span>15 februari 2026</span>
+            </div>
+        </div>
+
+        <div class="event-card">
+    <img src="img/event2baru.jpg" alt="Seminar Literasi Informasi">
+    <div class="event-content">
+        <h3>Seminar Literasi Informasi</h3>
+        <p>
+            Belajar mengelola informasi, mencari sumber terpercaya, dan
+            meningkatkan budaya baca di era digital.
+        </p>
+        <span>5 februari 2026</span>
+    </div>
+</div>
+
+         <div class="event-card">
+            <img src="img/event3.jpg" alt="Pelatihan Kelas Komputer">
+            <div class="event-content">
+                <h3>Pelatihan Kelas Komputer</h3>
+                 <p>
+                    Pengenalan komputer dasar untuk pemula agar lebih siap
+                    memanfaatkan teknologi dalam kegiatan sehari-hari.
+                </p>
+                <span>25 januari 2026</span>
+            </div>
+        </div>
     </div>
 
-    <a href="#" class="event-btn">Update Data</a>
+    <a href="event.html" class="event-btn">Selengkapnya</a>
 </section>
 
 <!-- BERITA -->
@@ -136,7 +166,7 @@
 
 <!-- FOOTER -->
 <footer class="footer">
-    <p>© 2026 Azwa Muzanni Lubis | Tani Sejahtara Library</p>
+    <p>© 2026 Febrika Nur Afifah | Pustaka Komunitas Warga</p>
 </footer>
 
 <!-- SCRIPT DI BAWAH (lebih rapi) -->
