@@ -61,7 +61,8 @@ function showLogin() {
     document.getElementById("registerForm").classList.add("hidden");
     document.getElementById("loginForm").classList.remove("hidden");
 }
-// DATA HARGA KOMODITAS
+
+// ================= DATA HARGA KOMODITAS =================
 const dataHarga = [
     {
         nama: "Cabai Merah",
@@ -82,7 +83,7 @@ const dataHarga = [
         status: "Turun"
     }
   
-// TAMPILKAN KE TABEL
+// ================= TAMPILKAN KE TABEL =================
 const tabel = document.getElementById("data-harga");
 
 dataHarga.forEach(item => {
