@@ -266,8 +266,9 @@ footer {
     .hero-content h1 {
         font-size: 30px;
     }
-/* ================= FIX PROFIL BIAR TENGAH ================= */
+/* ================= FIX TOTAL CV ================= */
 
+/* container utama */
 .cv {
     padding: 80px 20px;
     max-width: 900px;
@@ -275,25 +276,32 @@ footer {
     text-align: center;
 }
 
-/* CARD KHUSUS CV */
+/* card jadi center & rapi */
 .cv .card {
-    text-align: left;
     margin: 20px auto;
-    max-width: 700px;
+    max-width: 600px;
+    text-align: center; /* INI KUNCI NYA */
 }
 
-/* FOTO BIAR CENTER */
+/* list biar gak nempel kiri */
+.cv ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* isi list jadi center */
+.cv ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* foto tetap tengah */
 .profil-img {
     display: block;
     margin: 0 auto 25px;
 }
 
-/* BUTTON KONTAK CENTER */
+/* tombol tetap tengah */
 .center {
     text-align: center !important;
-}
-
-/* JARAK BIAR RAPI */
-.cv ul {
-    padding-left: 20px;
 }
