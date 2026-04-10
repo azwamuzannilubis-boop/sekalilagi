@@ -1,179 +1,103 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Pustaka Komunitas Warga</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PusKomWarga - Home</title>
+
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<header>
-   <div class="logo">📚PusKomWarga</div>
-   <nav>
-    <a href="#">Home</a>
-
-    <div class="dropdown">
-        <a href="about.html" class="dropbtn">About Us</a>
-        <div class="dropdown-content">
-            <a href="about.html">Tentang Kami</a>
-            <a href="about.html#visi">Visi</a>
-            <a href="about.html#misi">Misi</a>
-        </div>
-    </div>
-
-    <a href="cv.html">Profil</a>
-
-    <div class="dropdown">
-        <a href="#layanan" class="dropbtn">Layanan</a>
-        <div class="dropdown-content">
-            <a href="#layanan">Peminjaman Buku</a>
-            <a href="#layanan">Akses Digital</a>
-            <a href="#layanan">Literasi Informasi</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <a href="#koleksi" class="dropbtn">Koleksi</a>
-        <div class="dropdown-content">
-            <a href="#koleksi">Buku Umum</a>
-            <a href="#koleksi">Jurnal</a>
-            <a href="#koleksi">E-book</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <a href="#event" class="dropbtn">Event</a>
-        <div class="dropdown-content">
-            <a href="#event">Event Terbaru</a>
-            <a href="event.html">Selengkapnya</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <a href="#berita" class="dropbtn">Berita</a>
-        <div class="dropdown-content">
-            <a href="#berita">Berita Terbaru</a>
-            <a href="#berita">Pengumuman</a>
-        </div>
-    </div>
-
-    <a href="contact.html">Contact</a>
-    <a href="#" onclick="logout()" class="login-btn">Logout</a>
-</nav>
-</header>
-
-<section class="hero-modern">
-  <div class="hero-content">
-    
-    <h1 class="judul-utama animasi-text">
-      Selamat Datang di Pustaka Komunitas Warga
-    </h1>
-
-    <p class="subjudul">
-      Pusat literasi digital yang menyediakan informasi, koleksi, dan layanan 
-      untuk masyarakat dalam satu platform yang mudah diakses.
-    </p>
-
-    <div class="search-box-modern">
-      <input type="text" placeholder="Cari buku favoritmu...">
-      <button>🔍</button>
-    </div>
-
-    <br>
-    <a href="cv.html" class="btn">Lihat Profil Saya</a>
-
-  </div>
-</section>
-    
-<!-- LAYANAN -->
-<section id="layanan">
-    <h2>Layanan</h2>
-    
-    <div class="card-container">
-        <div class="card">📖 Peminjaman Buku</div>
-        <div class="card">💻 Akses Digital</div>
-        <div class="card">📚 Literasi Informasi</div>
-    </div>
-</section>
-
-<!-- KOLEKSI -->
-<section id="koleksi">
-    <h2>Koleksi</h2>
-    <div class="card-container">
-        <div class="card">Buku Umum</div>
-        <div class="card">Jurnal</div>
-        <div class="card">E-book</div>
-    </div>
-</section>
-
-<!-- EVENT -->
-<section id="event" class="event-section">
-    <h2>Event Perpustakaan</h2>
-    <p class="event-subtitle">
-        Ikuti berbagai kegiatan menarik untuk pengembangan literasi, keterampilan digital, dan komunitas warga.
-    </p>
-
-    <div class="event-container">
-        <div class="event-card">
-            <img src="img/event1.jpg" alt="Workshop Literasi Digital">
-            <div class="event-content">
-                <h3>Workshop Literasi Digital</h3>
-                <p>
-                    Pelatihan strategi penggunaan media digital dan internet sehat
-                    untuk masyarakat dan pelajar.
-                </p>
-                <span>15 februari 2026</span>
-            </div>
-        </div>
-
-        <div class="event-card">
-    <img src="img/event2baru.jpg" alt="Seminar Literasi Informasi">
-    <div class="event-content">
-        <h3>Seminar Literasi Informasi</h3>
-        <p>
-            Belajar mengelola informasi, mencari sumber terpercaya, dan
-            meningkatkan budaya baca di era digital.
-        </p>
-        <span>5 februari 2026</span>
-    </div>
-</div>
-
-         <div class="event-card">
-            <img src="img/event3.jpg" alt="Pelatihan Kelas Komputer">
-            <div class="event-content">
-                <h3>Pelatihan Kelas Komputer</h3>
-                 <p>
-                    Pengenalan komputer dasar untuk pemula agar lebih siap
-                    memanfaatkan teknologi dalam kegiatan sehari-hari.
-                </p>
-                <span>25 januari 2026</span>
-            </div>
-        </div>
-    </div>
-
-    <a href="event.html" class="event-btn">Selengkapnya</a>
-</section>
-
-<!-- BERITA -->
-<section id="berita">
-    <h2>Berita Terbaru</h2>
-    <p>Belum ada berita terbaru.</p>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <p>© 2026 Febrika Nur Afifah | Pustaka Komunitas Warga</p>
-</footer>
-
-<!-- SCRIPT DI BAWAH (lebih rapi) -->
 <script src="js/script.js"></script>
 <script>
     checkLogin();
 </script>
+
+<!-- NAVBAR -->
+<header>
+    <div class="logo">🌱PusKomWarga</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cv.html">Profil</a>
+
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Layanan ▾</a>
+            <div class="dropdown-content">
+                <a href="#">Koleksi Digital</a>
+                <a href="#">Promosi Hasil Panen</a>
+                <a href="#">Forum Diskusi</a>
+                <a href="#">Kemitraan</a>
+            </div>
+        </div>
+
+        <a href="contact.html">Contact</a>
+        <a href="#" onclick="logout()" class="login-btn">Logout</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-modern">
+    <div class="hero-content">
+        <h1>Perpustakaan Digital Pertanian</h1>
+        <p>Mendukung petani dengan informasi, teknologi, dan literasi modern</p>
+        <a href="#layanan" class="btn">Jelajahi</a>
+    </div>
+</section>
+
+<!-- LAYANAN -->
+<section id="layanan">
+    <h2>Layanan Kami</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Koleksi Digital</h3>
+            <p>Akses buku dan jurnal pertanian secara online</p>
+        </div>
+
+        <div class="card">
+            <h3>Promosi Hasil Panen</h3>
+            <p>Bantu petani memasarkan hasil panen</p>
+        </div>
+
+        <div class="card">
+            <h3>Forum Diskusi</h3>
+            <p>Diskusi antar petani dan ahli pertanian</p>
+        </div>
+    </div>
+</section>
+
+<!-- EVENT -->
+<section id="event">
+    <h2>Event Pertanian</h2>
+
+    <div class="event-container">
+        <div class="event-card">
+            <img src="img/cabai.jpg">
+            <div class="event-content">
+                <h3>Pelatihan Cabai</h3>
+                <p>Teknik budidaya cabai modern</p>
+                <span>April 2026</span>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="img/jagung.jpg">
+            <div class="event-content">
+                <h3>Workshop Jagung</h3>
+                <p>Peningkatan hasil panen jagung</p>
+                <span>Mei 2026</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3>PusKomWarga</h3>
+    <p>© 2026 Website Pertanian Digital</p>
+</footer>
 
 </body>
 </html>
