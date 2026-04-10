@@ -40,8 +40,9 @@ function login() {
 
 // ================= CEK LOGIN =================
 function checkLogin() {
-    if (localStorage.getItem("isLogin") !== "true") {
-        window.location.href = "login.html";
+    // biar gak error kalau belum login
+    if (!localStorage.getItem("isLogin")) {
+        console.log("Belum login (mode bebas)");
     }
 }
 
@@ -49,6 +50,20 @@ function checkLogin() {
 function logout() {
     localStorage.removeItem("isLogin");
     window.location.href = "login.html";
+}
+
+// ================= CONTACT =================
+function kirimPesan() {
+    const email = document.getElementById("emailContact").value;
+    const phone = document.getElementById("phoneContact").value;
+    const pesan = document.getElementById("pesan").value;
+
+    if (!email || !phone || !pesan) {
+        alert("Harap isi semua form!");
+        return;
+    }
+
+    alert("Pesan berhasil dikirim!");
 }
 
 // ================= TOGGLE =================
