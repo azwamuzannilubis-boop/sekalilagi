@@ -343,14 +343,18 @@ footer h4 {
     overflow: hidden;
 }
 
-/* ================= DATA REAL-TIME & KOLEKSI - WHITE CARDS ================= */
+/* ================= DATA REAL-TIME & KOLEKSI - WHITE CARDS TENGGAH ================= */
 
-/* Card Container tetap sama */
+/* Card Container - DI TENGGAH */
 .card-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: **center**;        /* ✅ Tengah horizontal */
+    align-items: **center**;            /* ✅ Tengah vertikal */
+    gap: 25px;                          /* Jarak antar card lebih lebar */
     flex-wrap: wrap;
+    padding: 20px 0;                    /* Padding atas bawah */
+    max-width: 1200px;                  /* Batasi lebar maksimal */
+    margin: 0 auto;                     /* Pastikan container di tengah */
 }
 
 /* CARD BARU - PUTIH DENGAN EFEK */
@@ -362,16 +366,22 @@ footer h4 {
     /* Border halus */
     border: 2px solid #e0e0e0;
     
-    padding: 30px;
-    border-radius: 20px;
-    width: 260px;
+    padding: 35px 25px;                 /* Padding lebih nyaman */
+    border-radius: 24px;                /* Border radius lebih smooth */
+    width: 280px;                       /* Lebar lebih ideal */
+    min-height: 320px;                  /* Tinggi minimum sama */
     text-align: center;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     position: relative;
     overflow: hidden;
     
     /* Shadow awal */
-    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    
+    /* Flex untuk konten di tengah */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* TULISAN HITAM PEKAT */
@@ -394,7 +404,7 @@ footer h4 {
     height: 100%;
     background: linear-gradient(120deg, 
         transparent 0%, 
-        rgba(255,255,255,0.8) 50%, 
+        rgba(255,255,255,0.9) 50%, 
         transparent 100%);
     top: 0;
     left: -100%;
@@ -408,11 +418,11 @@ footer h4 {
 
 /* EFEK HOVER YANG KEREN */
 .card:hover {
-    transform: translateY(-15px) scale(1.03);
+    transform: translateY(-18px) scale(1.04);
     box-shadow: 
-        0 25px 50px rgba(0,0,0,0.2),
-        0 0 0 1px rgba(255,255,255,0.8),
-        inset 0 1px 0 rgba(255,255,255,0.8);
+        0 30px 60px rgba(0,0,0,0.25),
+        0 0 0 1px rgba(255,255,255,1),
+        inset 0 1px 0 rgba(255,255,255,1);
     
     /* Border glow */
     border-color: #4CAF50;
@@ -427,15 +437,15 @@ footer h4 {
     width: 0;
     height: 0;
     border-radius: 50%;
-    background: rgba(76, 175, 80, 0.1);
+    background: rgba(76, 175, 80, 0.15);
     transform: translate(-50%, -50%);
     transition: width 0.6s, height 0.6s;
     z-index: 2;
 }
 
 .card:hover::after {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 }
 
 /* Header card lebih menonjol */
@@ -447,7 +457,8 @@ footer h4 {
     background-clip: text;
     font-weight: 700 !important;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 26px;
+    line-height: 1.2;
 }
 
 /* Status warna tetap dipertahankan */
@@ -473,13 +484,15 @@ footer h4 {
 .card ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .card ul li {
     position: relative;
-    padding-left: 25px;
-    margin-bottom: 12px;
-    font-size: 15px;
+    padding-left: 28px;
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .card ul li::before {
@@ -488,27 +501,56 @@ footer h4 {
     left: 0;
     color: #4CAF50;
     font-weight: bold;
+    font-size: 18px;
 }
 
 /* Tambahan untuk koleksi section */
+#koleksi .card-container {
+    justify-content: center;
+    align-items: center;
+}
+
 #koleksi .card {
-    width: 280px;
-    max-width: 300px;
+    width: 300px;
+    min-height: 350px;
 }
 
 #koleksi .card h2 {
-    font-size: 26px;
+    font-size: 28px;
 }
 
-/* Hover untuk mobile lebih smooth */
+/* RESPONSIVE - MOBILE PERFECT CENTER */
 @media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;     /* Stack vertikal */
+        gap: 30px;
+        padding: 40px 20px;
+    }
+    
+    .card {
+        width: 90%;                 /* Full width mobile */
+        max-width: 350px;
+        min-height: 280px;
+    }
+    
     .card:hover {
-        transform: translateY(-8px) scale(1.02);
+        transform: translateY(-10px) scale(1.02);
     }
     
     .card::after {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 30px 20px;
+    }
+    
+    .card h2,
+    .card h3 {
+        font-size: 24px;
     }
 }
 
