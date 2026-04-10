@@ -13,9 +13,14 @@ body {
 }
 
 /* CONTAINER AGAR RAPI */
-.cv, .hero-modern {
+.cv {
     max-width: 1100px;
     margin: auto;
+}
+
+/* HERO FULL */
+.hero-modern {
+    width: 100%;
 }
 
 /* ================= NAVBAR ================= */
