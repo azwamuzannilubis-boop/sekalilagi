@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Febrika</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil - PusKomWarga</title>
 
-    <!-- LINK CSS -->
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<div class="container">
+<script src="js/script.js"></script>
+<script>
+    checkLogin();
+</script>
 
-    <!-- HEADER -->
-    <div class="header">
-        <img src="cantikk.jpeg" alt="Foto Febrika">
-        <div>
-            <h1>Febrika Nur Afifah</h1>
-            <p>Mahasiswa Perpustakaan & Sains Informasi</p>
+<!-- NAVBAR -->
+<header>
+    <div class="logo">📚PusKomWarga</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cv.html">Profil</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" onclick="logout()" class="login-btn">Logout</a>
+    </nav>
+</header>
+
+<!-- CV SECTION -->
+<section class="cv">
+
+    <h1>Profil Saya</h1>
+
+    <!-- FOTO -->
+    <img src="cantikk.jpeg" class="profil-img">
+
+    <div class="card">
+        <h2>Data Diri</h2>
+        <ul>
+            <li><b>Nama:</b> Febrika Nur Afifah</li>
+            <li><b>TTL:</b> Medan, 02 Februari 2005</li>
+            <li><b>Jenis Kelamin:</b> Perempuan</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Pendidikan</h2>
+        <ul>
+            <li>Universitas Sumatera Utara</li>
+            <li>S1 Perpustakaan & Sains Informasi</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Pengalaman</h2>
+        <ul>
+            <li>Mengembangkan platform perpustakaan digital</li>
+            <li>Mengelola bahan pustaka</li>
+            <li>Layanan sirkulasi</li>
+        </ul>
+    </div>
+
+    <div class="card center">
+        <h2>Kontak</h2>
+        <a href="https://instagram.com" class="btn">Instagram</a>
+        <a href="https://wa.me/62831" class="btn">WhatsApp</a>
+        <a href="mailto:email@gmail.com" class="btn">Email</a>
+    </div>
+
+    <div class="card">
+        <h2>Video Favorit</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/E8XXRaTrbCw" allowfullscreen></iframe>
         </div>
     </div>
 
-    <!-- GRID -->
-    <div class="grid">
+</section>
 
-        <!-- KIRI -->
-        <div>
-            <h2>Data Diri</h2>
-            <p>📍 Medan, 02 Februari 2005</p>
-            <p>👩 Perempuan</p>
-
-            <h2>Pendidikan</h2>
-            <p>Universitas Sumatera Utara</p>
-            <p>S1 Perpustakaan & Sains Informasi</p>
-
-            <h2>Kontak</h2>
-            <a href="https://www.instagram.com/febrika_nurafifah/?next=" target="_blank" class="btn">Instagram</a>
-            <a href="https://wa.me/6283194958062" target="_blank" class="btn">WhatsApp</a>
-            <a href="mailto:Febrikanurafifah736@gmail.com" class="btn">Email</a>
-        </div>
-
-        <!-- KANAN -->
-        <div>
-            <h2>Pengalaman</h2>
-            <ul>
-                <li>Mengembangkan platform perpustakaan digital</li>
-                <li>Mengelola bahan pustaka</li>
-                <li>Layanan sirkulasi</li>
-            </ul>
-
-            <h2>Video Favorit</h2>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/E8XXRaTrbCw" allowfullscreen></iframe>
-            </div>
-        </div>
-
-    </div>
-
-    <a href="index.html" class="back">⬅ Kembali ke Home</a>
-
-</div>
+<footer>
+    <h3>PusKomWarga</h3>
+    <p>© 2026 Website Perpustakaan Komunitas</p>
+</footer>
 
 </body>
 </html>
