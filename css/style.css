@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-  background: #ffffff;
+   background: linear-gradient(135deg, #1B5E20, #4CAF50, #FFF8E1);
     color: white;
     line-height: 1.6;
 }
@@ -53,7 +53,7 @@ nav a::after {
     bottom: -5px;
     width: 0;
     height: 2px;
-    background: #1ABC9C;
+     background: linear-gradient(135deg, #1B5E20, #4CAF50, #FFF8E1);
     transition: 0.3s;
 }
 
