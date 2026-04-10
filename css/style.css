@@ -143,7 +143,7 @@ transition:0.3s;
 .btn:hover{
 background:#16a085;
 }
-/* ================= CV SECTION - PROFESSIONAL WHITE CARDS ================= */
+/* ================= CV SECTION ================= */
 .cv {
     padding: 100px 20px;                /* Padding lebih luas */
     background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(248,250,252,0.95));
@@ -546,7 +546,7 @@ background:#16a085;
     overflow: hidden;
 }
 
-/* ================= DATA REAL-TIME & KOLEKSI - WHITE CARDS TENGGAH ================= */
+/* ================= DATA REAL-TIME ================= */
 
 /* Card Container - DI TENGGAH */
 .card-container {
