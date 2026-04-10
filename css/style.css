@@ -143,106 +143,309 @@ transition:0.3s;
 .btn:hover{
 background:#16a085;
 }
-/* ================= CV SECTION ================= */
+/* ================= CV SECTION - PROFESSIONAL WHITE CARDS ================= */
 .cv {
-    padding: 70px 20px;
+    padding: 100px 20px;                /* Padding lebih luas */
+    background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(248,250,252,0.95));
+    min-height: 100vh;
+}
+
+.cv-container {
+    max-width: 1200px;
+    margin: 0 auto;                     /* ✅ SEMUA DI TENGAH */
 }
 
 .cv h1 {
     text-align: center;
-    margin-bottom: 50px;
-    font-size: 40px;
+    margin-bottom: 80px;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 1px;
+    position: relative;
 }
 
-/* CARD */
+.cv h1::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* CONTAINER CARDS CV - TENGGAH */
+.cv-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+/* CARD CV - PUTIH PROFESIONAL */
 .card {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    padding: 35px;
-    border-radius: 20px;
-    margin-bottom: 40px;
+    background: #ffffff !important;             /* ✅ PUTIH SOLID */
+    backdrop-filter: blur(0px) !important;
+    border: 2px solid #f0f0f0;
+    padding: 45px 35px;                         /* Padding luas */
+    border-radius: 24px;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 380px;                           /* Lebar ideal */
+    min-height: 420px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.08);
+    
+    /* Flex center konten */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
+/* EFEK HOVER CV CARD */
+.card:hover {
+    transform: translateY(-20px) scale(1.02);
+    box-shadow: 
+        0 35px 80px rgba(0,0,0,0.15),
+        0 0 0 1px rgba(76,175,80,0.2),
+        inset 0 1px 0 rgba(255,255,255,1);
+    border-color: #4CAF50;
+}
+
+/* GLOW SWEEP EFFECT */
+.card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, 
+        transparent 0%, 
+        rgba(255,255,255,0.9) 50%, 
+        transparent 100%);
+    top: 0;
+    left: -100%;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+/* TULISAN HITAM PEKAT */
+.card h2,
+.card h3,
+.card h4,
+.card p,
+.card li,
+.card span {
+    color: #1a1a1a !important;
+    font-weight: 500;
+    text-shadow: none !important;
+}
+
+/* HEADER CARD - GRADIENT */
 .card h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    border-bottom: 2px solid rgba(255,255,255,0.3);
-    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border: none;
+    padding-bottom: 0;
+    position: relative;
 }
 
-/* LIST RAPI */
+.card h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* LIST RAPI PROFESIONAL */
 .card ul {
     list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    flex-grow: 1;
 }
 
 .card ul li {
-    margin-bottom: 12px;
+    position: relative;
+    padding: 12px 0 12px 30px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+    border-bottom: 1px solid #f5f5f5;
+    transition: 0.3s;
+}
+
+.card ul li:last-child {
+    border-bottom: none;
+}
+
+.card ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    color: #4CAF50;
+    font-weight: bold;
     font-size: 16px;
 }
 
-/* FOTO PROFIL PROFESIONAL */
+.card ul li:hover {
+    padding-left: 35px;
+    background: rgba(76,175,80,0.05);
+    border-radius: 8px;
+}
+
+/* FOTO PROFIL - UPGRADE */
 .profil-img {
-    width: 190px;
-    height: 190px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    margin: 0 auto 30px;
-    border: 6px solid #DCDCDC;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    margin: 0 auto 35px;
+    border: 8px solid #ffffff;
+    box-shadow: 
+        0 20px 60px rgba(0,0,0,0.15),
+        inset 0 2px 0 rgba(255,255,255,0.9);
+    transition: all 0.4s ease;
 }
 
-/* KONTAK TOMBOL */
+.profil-img:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 
+        0 25px 80px rgba(0,0,0,0.2),
+        inset 0 2px 0 rgba(255,255,255,1);
+}
+
+/* KONTAK TOMBOL - UPGRADE */
+.center {
+    text-align: center;
+    margin-top: 30px;
+}
+
 .center .btn {
     margin: 10px;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(76,175,80,0.3);
+    position: relative;
+    overflow: hidden;
 }
 
-/* VIDEO */
+.center .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: 0.6s;
+}
+
+.center .btn:hover::before {
+    left: 100%;
+}
+
+.center .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(76,175,80,0.4);
+}
+
+/* VIDEO - UPGRADE */
 .video-container {
-    margin-top: 20px;
+    margin-top: 60px;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    border: 2px solid #f0f0f0;
+    transition: all 0.4s ease;
+}
+
+.video-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+    border-color: #4CAF50;
 }
 
 .video-container iframe {
     width: 100%;
-    height: 480px;
-    border-radius: 15px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
 }
 
-/* ================= FOOTER ================= */
-footer {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 60px 20px;
-    text-align: center;
-}
-
-footer h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-footer h4 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-/* RESPONSIVE */
+/* RESPONSIVE PROFESSIONAL */
 @media (max-width: 768px) {
-
-    header {
-        padding: 15px 20px;
+    .cv {
+        padding: 80px 15px;
+    }
+    
+    .cv h1 {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+    
+    .cv-cards {
         flex-direction: column;
+        align-items: center;
+        gap: 40px;
     }
-
-    nav {
-        margin-top: 10px;
+    
+    .card {
+        max-width: 100%;
+        width: 95%;
+        min-height: 380px;
     }
-
-    .hero-modern h1 {
-    font-size: 30px;
+    
+    .video-container iframe {
+        height: 280px;
+    }
+    
+    .card:hover,
+    .video-container:hover {
+        transform: translateY(-10px) scale(1.01);
+    }
 }
 
-    .video-container iframe {
-        height: 250px;
+@media (max-width: 480px) {
+    .card {
+        padding: 35px 25px;
+    }
+    
+    .profil-img {
+        width: 160px;
+        height: 160px;
     }
 }
 
