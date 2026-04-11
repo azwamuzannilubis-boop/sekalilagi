@@ -118,13 +118,16 @@ nav a:hover::after {
 
 /* ================= HERO ================= */
 .hero-modern {
+   body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-modern {
+    width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     background: linear-gradient(rgba(0,100,0,0.6), rgba(0,100,0,0.6)),
-    url('../img/interior-library.jpg') center/cover;
+    url('../slidernew.jpg') center/cover;
     color: white;
 }
 
