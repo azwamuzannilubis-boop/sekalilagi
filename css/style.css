@@ -325,6 +325,44 @@ section h2 {
     border-radius: 15px;
 }
 
+/* CONTACT */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* INPUT */
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* TEXTAREA */
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
 
 /* ================= FOOTER ================= */
 footer {
