@@ -364,6 +364,20 @@ section h2 {
     resize: none;
 }
 
+/* SECTION ABOUT */
+.about {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* CARD KHUSUS ABOUT */
+.about-card {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: left;
+    line-height: 1.8;
+}
+
 /* ================= FOOTER ================= */
 footer {
     background: rgba(0, 0, 0, 0.6);
