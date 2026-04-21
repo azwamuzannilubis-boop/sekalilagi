@@ -3,34 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <script src="js/script.js"></script>
+<script>
+    function kirimPesan() {
+        alert("Pesan berhasil dikirim!");
+    }
+</script>
 
+<!-- NAVBAR -->
 <header>
     <div class="logo">🌱Tani Sejahtera Library</div>
     <nav>
         <a href="index.html">Home</a>
-        <a href="cv.html">Profil</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
         <a href="#" onclick="logout()" class="login-btn">Logout</a>
     </nav>
 </header>
 
-<div class="contact-container">
+<!-- CONTACT -->
+<section class="contact">
     <h2>Contact Us</h2>
 
-    <form onsubmit="event.preventDefault(); kirimPesan();">
-        <input type="email" id="emailContact" placeholder="Email" required>
-        <input type="text" id="phoneContact" placeholder="No Handphone" required>
-        <textarea id="pesan" placeholder="Pesan" required></textarea>
+    <div class="contact-container">
+        <form class="contact-form" onsubmit="event.preventDefault(); kirimPesan();">
 
-        <button type="submit" class="btn-contact">Kirim</button>
-    </form>
-</div>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="No Handphone" required>
+            <textarea placeholder="Pesan" required></textarea>
+
+            <button type="submit" class="btn">Kirim Pesan</button>
+
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>© 2026 Tani Sejahtera Library</h3>
+    <p>Azwa Muzanni Lubis</p>
+</footer>
 
 </body>
 </html>
