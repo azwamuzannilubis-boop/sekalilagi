@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas Hari Belajar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .container-tugas {
+            padding: 30px;
+        }
+
+        .list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #2e7d32, #66bb6a);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR (copy dari index kamu biar konsisten) -->
+<header>
+    <div class="logo">🌱 Tani Sejahtera Library</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tugas-hari.html">Tugas PHP</a>
+    </nav>
+</header>
+
+<section class="container-tugas">
+    <h2>📘 List Belajar PHP (1 - 1000)</h2>
+
+    <div class="list" id="listHari"></div>
+</section>
+
+<script>
+    const container = document.getElementById("listHari");
+
+    for (let i = 1; i <= 1000; i++) {
+        const div = document.createElement("div");
+        div.className = "card";
+        div.innerText = "Hari ke-" + i + " belajar PHP";
+        container.appendChild(div);
+    }
+</script>
+
+</body>
+</html>
